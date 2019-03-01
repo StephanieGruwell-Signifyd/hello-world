@@ -1,0 +1,42 @@
+{
+  "info": {
+    "_postman_id": "85f3c729-cce2-4b14-a360-202753cf9f4e",
+    "name": "Learning",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "61f769cb-4581-4275-8e4e-13bf9db3ae0c",
+      "name": "Github add info",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": {
+            "addTokenTo": "header"
+          }
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "committer",
+            "value": "{name: stephanie, stephanie.gruwell@signifyd.com}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"message\": \"my commit message\",\n\t\"committer\": {\n\t\t\"name\": \"My Name\",\n\t\t\"email\": \"My Email\"\n},\n\t\"content\": \"base64encoded\"\n}"
+        },
+        "url": "https://api.github.com/repos/simplyroot/hello-world/contents/postmantest.txt",
+        "description": "first attempt to add information to my GitHub account"
+      },
+      "response": []
+    }
+  ]
+}
