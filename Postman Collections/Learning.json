@@ -10,12 +10,18 @@
       "name": "Github add info",
       "request": {
         "auth": {
-          "type": "oauth2",
-          "oauth2": {
-            "addTokenTo": "header"
+          "type": "oauth1",
+          "oauth1": {
+            "token": "e438087f7c752cf1d7ddce912b8aaaf3bade5a13",
+            "consumerSecret": "night we met",
+            "consumerKey": "stephanie.gruwell@signifyd.com",
+            "signatureMethod": "HMAC-SHA1",
+            "version": "1.0",
+            "addParamsToHeader": false,
+            "addEmptyParamsToSign": false
           }
         },
-        "method": "PUT",
+        "method": "GET",
         "header": [
           {
             "key": "Content-Type",
@@ -26,14 +32,35 @@
           {
             "key": "committer",
             "value": "{name: stephanie, stephanie.gruwell@signifyd.com}",
-            "type": "text"
+            "type": "text",
+            "disabled": true
           }
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n\t\"message\": \"my commit message\",\n\t\"committer\": {\n\t\t\"name\": \"My Name\",\n\t\t\"email\": \"My Email\"\n},\n\t\"content\": \"base64encoded\"\n}"
+          "raw": ""
         },
-        "url": "https://api.github.com/repos/simplyroot/hello-world/contents/postmantest.txt",
+        "url": {
+          "raw": "https://api.github.com/users/simplyroot/repos?sort=pushed",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "users",
+            "simplyroot",
+            "repos"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "pushed",
+              "equals": true
+            }
+          ]
+        },
         "description": "first attempt to add information to my GitHub account"
       },
       "response": []
