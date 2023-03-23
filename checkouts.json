@@ -1,0 +1,65 @@
+{
+"checkoutId": "29bd5784-d3e0-4baa-bd2f-dbb82d90406d",
+"device": 
+   {"clientIpAddress": "75.100.88.78",
+  "sessionId": "82ce5fca-c2b2-429b-b487-6c3053469f85",
+"fingerprint": {}
+},
+"merchantPlatform": {
+"name": "Salesforce Commerce Cloud",
+"version": "1.2.4"
+},
+"signifydClient": {
+"application": "Salesforce Commerce Cloud",
+"version": "18.1.0"
+},
+"transactions": [
+{}
+],
+"additionalEvalRequests": [
+"SCA_EVALUATION"
+],
+"decisionMechanism": "SIGNIFYD_RECOMMENDATION",
+"orderId": "XGR-1840823423",
+"purchase": {
+"createdAt": "2020-12-23T13:57:40-0700",
+"orderChannel": "WEB",
+"totalPrice": 105.99,
+"currency": "GBP",
+"confirmationEmail": "bob@example.com",
+"products": [],
+"shipments": [],
+"confirmationPhone": "+442071838750",
+"totalShippingCost": 5.99,
+"discountCodes": [],
+"receivedBy": "string"
+},
+"userAccount": {
+"username": "bobiverse",
+"createdDate": "2020-12-23T13:57:40-0700",
+"accountNumber": "q49sgfkj49",
+"aggregateOrderCount": 1,
+"aggregateOrderDollars": 105.99,
+"email": "bob@example.com",
+"phone": "+442071838750",
+"lastOrderId": "string",
+"lastUpdateDate": "2020-12-23T13:57:40-0700",
+"emailLastUpdateDate": "2020-12-23T13:57:40-0700",
+"phoneLastUpdateDate": "2020-12-23T13:57:40-0700",
+"passwordLastUpdateDate": "2020-12-23T13:57:40-0700"
+},
+"memberships": [
+{}
+],
+"coverageRequests": [
+"FRAUD"
+],
+"merchantCategoryCode": "1111",
+"sellers": [
+{}
+],
+"tags": [
+"JULY_FACEBOOK_CAMPAIGN"
+],
+"customerOrderRecommendation": "DECLINE_POLICY"
+}
